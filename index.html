@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikanoppapeli - Kahdella nopalla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="otsikko">Sikanoppapeli kahdella nopalla</h1>
+    
+    <div id="tekstikentat">
+        <p>Lisää pelaajat 2-4 henkilöä</p>
+        <input type="text" name="lisaa_pelaajia" id="pelaaja"><br>
+        <button class="button" id="aloita">Aloita</button>
+        <button class="button" id="lisaa">Lisää</button>
+        
+        <label for="pisteraja">Pisteraja</label>
+        <select name="pisteraja" id="pisteraja">
+            <option value="20">20</option> 
+            <option value="50">50</option> 
+            <option value="100">100</option>
+            <option value="200">200</option>
+        </select>
+    </div>
+    
+    <div id="tulokset"></div>
+    
+    <div id="buttons">
+        <button class="button" id="pelaa">Pelaa</button>
+        <button class="button" id="lopeta">Lopeta heittäminen</button>
+    </div>
+
+    <div class="wrapper">
+        <h1></h1>
+        <h2></h2>
+        <div class="dices">
+            <p id="yhteensa"></p>
+            <p id="ilmoitukset"></p>
+            <img>
+            <img>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

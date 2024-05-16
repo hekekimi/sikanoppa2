@@ -1,0 +1,209 @@
+
+@import url('https://fonts.cdnfonts.com/css/mixbrescia');
+@import url('https://fonts.cdnfonts.com/css/atma');
+
+
+
+
+var{
+    --vari: rgb(208,214,218);
+}
+
+body {
+    background: linear-gradient(to
+     right,#3f5efb,#e6810f);
+}
+
+.wrapper{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="text"]{
+    border: 2px solid #2fe096;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 20px;
+
+}
+
+select{
+    font-size: 18px;
+}
+
+
+
+h1{
+    margin: 20px;
+    font-size: 3rem;
+    color:var(--vari)
+}
+
+
+.dices
+{
+    margin: 0px 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+p{
+
+    font-size: 2.5rem;
+    color: var(--vari);
+}
+
+img{
+    width: 320px;
+}
+
+
+#tekstikentat{
+
+        font-family: 'Atma', sans-serif;
+        margin: 0px 50px;
+        text-align: center;
+        display: inline-block;
+    
+}
+
+#otsikko{
+    font-family: 'Atma', sans-serif;
+    text-align: center;
+
+}
+
+
+
+
+
+.button {
+    font-family: 'Atma', sans-serif;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+  }
+  .button:hover {
+    background-color: #f0f0f0; 
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(78, 76, 76, 0.19);
+  }
+
+#tekstikentat{
+    position:relative;
+    left: 35%;
+   
+    
+}
+#pelaaja{
+    margin-bottom: 30px;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+
+@keyframes voitto {
+    0% {color: #04AA6D;  ;transform: scale(2, 3); }
+    25%{color: #2fe096;}
+    50%{color:aqua}
+    75%{color: #e6810f;}
+    100%{color: rgb(70, 8, 3); transform: rotate(-20deg)}
+    
+    
+}
+
+
+
+
+
+
+
+
+.voittoilmoitus{
+    position: absolute;
+    font-size: 5em;
+    font-family: 'MixBrescia', sans-serif;
+    left: 25%;
+    top: 30%;
+    animation-name: voitto;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 2;
+}
+
+#tuloslista{
+
+
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ilmoitukset{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Atma', sans-serif;
+    color: crimson;
+    background-color: darkslategray;
+    border-radius: 8px;
+    
+}
+
+
+
+label{
+    font-size: 1.2em;
+}
+
+#buttons{
+    position: relative;
+    bottom: 10%;
+    left: 40%;
+    
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    #ilmoitukset {
+        font-size: 14px; 
+        padding: 5px;
+    }
+ 
+
+    #tekstikentat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #aloita,
+    #lisaa,
+    #pisteraja,
+    label {
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
